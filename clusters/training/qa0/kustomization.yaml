@@ -2,3 +2,6 @@ resources:
 - ../dev/
 namespace: qa0
 nameSuffix: "-qa0"
+patchesStrategicMerge:
+- apache-qa0.yaml
+- nginx-qa0.yaml
