@@ -1,0 +1,4 @@
+resources:
+- ../dev/
+namespace: qa0
+nameSuffix: "-qa0"
