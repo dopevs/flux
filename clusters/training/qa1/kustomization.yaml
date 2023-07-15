@@ -1,0 +1,7 @@
+resources:
+- ../dev/
+namespace: qa1
+nameSuffix: "-qa1"
+patchesStrategicMerge:
+- apache-qa1.yaml
+- nginx-qa1.yaml
