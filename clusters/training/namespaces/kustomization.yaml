@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - dev-namespace.yaml
 - qa0-namespace.yaml
+- qa1-namespace.yaml
