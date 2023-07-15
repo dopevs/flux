@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - namespace.yaml
 - apache.yaml
+- nginx.yaml
