@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: sample-app
-        image: yb2023/sample-app:1a670b10935c226d555aded43e74bf509d6a180e
+        image: yb2023/sample-app:8373f2b543b6e7b5f3d02dcecd8b74e54bcc7ff9
         ports:
         - containerPort: 3000
         resources:
