@@ -4,3 +4,4 @@ namespace: dev
 resources:
 - apache.yaml
 - nginx.yaml
+- sample-app.yaml
