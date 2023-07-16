@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: sample-app
-        image: yb2023/sample-app:8373f2b543b6e7b5f3d02dcecd8b74e54bcc7ff9 # {"$imagepolicy": "flux-system:sample-app"}
+        image: yb2023/sample-app:v0.0.0 # {"$imagepolicy": "flux-system:sample-app"}
         ports:
         - containerPort: 3000
         resources:
