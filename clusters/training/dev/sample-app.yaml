@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sample-app
+  namespace: default
+  labels:
+    app: sample-app
+spec:
+  selector:
+    app: sample-app
+  ports:
+  - port: 3000
+    name: sample-app
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-app
+  namespace: default
+  labels:
+    app: sample-app
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: sample-app
+  template:
+    metadata:
+      labels:
+        app: sample-app
+    spec:
+      containers:
+      - name: sample-app
+        image: yb2023/sample-app:1a670b10935c226d555aded43e74bf509d6a180e
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            memory: '100Mi'
+            cpu: '25m'
+          limits:
+            memory: '100Mi'
+            cpu: '25m'
